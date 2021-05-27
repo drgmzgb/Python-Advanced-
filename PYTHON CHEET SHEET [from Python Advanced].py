@@ -9,4 +9,3 @@ from collections import deque
 players_left = deque(input())
 players_left.rotate(-int(input()))
 player_out = players_left.pop()
-
