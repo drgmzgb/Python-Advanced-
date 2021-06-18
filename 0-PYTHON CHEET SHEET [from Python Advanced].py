@@ -4,7 +4,7 @@ reversed_word = []
 reversed_word[:] = text
 # ['k', 'o', 'i', ' ', 's', 'i']
 
-#2 rotate - rotating a list/counting n times /with deque/:
+#2 Tuples and Sets rotate - rotating a list/counting n times /with deque/:
 from collections import deque
 players_left = deque(input())
 players_left.rotate(-int(input()))
@@ -36,3 +36,36 @@ min_number = min(numbers_stack)
 #7 turn list of a string of numbers to a list of numbers
 orders = input()
 x = [int(n) for n in orders]
+
+# 8 finding the longest list within a list with function max:
+intersections = []
+final_result = max(intersections, key=lambda coll: len(coll))
+
+# # list(input()):
+# from
+# # matrix = [
+# #   ['ABC'],
+# #   ['DEF'],
+# #   ['X!@']
+# # ]
+# to
+# [['A', 'B', 'C'], ['D', 'E', 'F'], ['X', '!', '@']]
+
+# 9 matrix in one line with comprehension
+n = int(input())
+matrix = [[int(el) for el in input().split(", ")] for _ in range(n)]
+#
+# 10 how to print dictionary with list comprehension - on new rows
+result = {}
+[print(f'{key} -> {value}') for key, value in result.items()]
+
+# 11 filter even nums with lambda
+nums = []
+res = list(filter(lambda x: x % 2 == 0, nums))
+
+# 12 print list with integers
+for el in final_result:
+    print(", ".join(map(str, el)))
+
+
+
